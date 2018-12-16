@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>iGraph.js</title>
+    <style>
+        canvas {
+            outline: 1px solid #CCC;
+        }
+
+        menu {
+            position: fixed;
+            opacity: 0.8;
+        }
+
+        menu button {
+            margin: 0 3px 3px 0;
+            padding: 10px;
+            border: 1px solid #CCC;
+            background: #FFF;
+        }
+
+        menu button:hover {
+            background: #CCC;
+        }
+
+        body {
+            overflow: hidden;
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+<menu>
+    <button>Load JSON-graph</button>
+    <button>Random graph</button>
+    <button>Reset</button>
+    <button>-</button>
+    <button>+</button>
+    <button id="edgeLens">Edge Lens On</button>
+    <button id="radarView">Radar View On</button>
+    <button id="fishEyeLens">FishEye Lens On</button>
+    <button id="bnnLens">BringNeighborsNear Lens On</button>
+</menu>
+<div id="igraph"></div>
+<script src="Constants.js"></script>
+<script src="EdgeLens.js"></script>
+<script src="FishEyeLens.js"></script>
+<script src="BringNeighborsNearLens.js"></script>
+<script src="Radar.js"></script>
+<script src="Animatable.js"></script>
+<script src="AnimatedViewport.js"></script>
+<script src="Input.js"></script>
+<script src="Grid.js"></script>
+<script src="ForceDirect.js"></script>
+<script src="Graph.js"></script>
+<script src="iGraph.js"></script>
+</body>
+</html>
